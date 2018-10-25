@@ -14,12 +14,8 @@ def repeat (says, n = 1)
     end
 end
 
-def start_of_word (says, characters)
-    if characters == 1
-        says[characters - 1]
-    else
-        says[0, characters]
-    end
+def start_of_word (says, n)
+    says[0..(n - 1)]
 end
 
 def first_word says

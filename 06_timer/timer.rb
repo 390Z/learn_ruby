@@ -13,6 +13,6 @@ class Timer
   def time_string
     minutes = @seconds / 60
     hours = minutes / 60
-    format("%02d:%02d:%02d", hours, minutes%60, seconds%60)
+    format("%02d:%02d:%02d", hours, minutes%60, @seconds%60)
   end
 end
